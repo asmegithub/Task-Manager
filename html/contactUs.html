@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+        text-align: center;
+        background-image: url("../images/contactus.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        color: white;
+        background-color: black;
+        }
+        p {
+            width: 70%;
+            margin: auto;
+            text-align: justify;
+        }
+        @media screen and (max-width:772px){
+            .contactpage {
+            flex-direction: column;
+            }
+        }
+        div{
+            text-align: left;
+            margin-left: 30px;
+        }
+        .address, .phone, .email{
+            display: flex;
+            justify-content: left;
+            margin: 30px 0;
+            /* margin: 10px; */
+        }
+        .contact_info, .messageUs{
+            margin: auto;
+            /* border: 1px solid; */
+            width: 380px;
+            /* background-color: black; */
+            /* width: 50%; */
+        }
+        .messageUs {
+            background-color: white;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .contactpage{
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+        }
+        
+        input,textarea{
+            width: 350px; 
+            height: 50px;
+            border-style: none none groove;
+            margin: 10px 0;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        img {
+            /* /* size: 32px; */
+            height:50px; 
+            margin: auto 0;
+        }
+        #submit {
+            background-color: darkorange;
+            border-radius: 10px;
+        }
+        input[name="message"] {
+            height: 90px;
+        }
+        textarea {
+            max-width: 350px;
+            max-height: 200px;
+            height: 100px;
+        }
+        #infos {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>TaskEase is a free task management website that helps you to keep in control of everything, either in your personal or work life. It allows you to create subtasks, improving the way how you can keep track of your Tasks.</p>
+    <div class="contactpage">
+        <div class="contact_info">
+            <div class="address">
+                <img src="../images/map1.png" alt="address">
+                <div>
+                    <span id="infos">Address</span><br>
+                    <span>King George VI Street, Addis Ababa, Ethiopia, 1000</span>
+                </div>
+            </div> 
+            <div class="phone">
+                <img src="../images/telephone.png" alt="">
+                <div>
+                    <span id="infos">Phone</span><br>
+                    <span>+251-906-397-248</span>
+                </div>
+            </div>
+            <div class="email">
+                <img src="../images/message.png" alt="">
+                <div>
+                    <span id="infos">Email</span><br>
+                    <span>realdevelopers@aau.tech</span>
+                </div>
+            </div>
+        </div>
+        <div class="messageUs">
+            <form action="" method="get">
+                <h2>Leave Us A Message</h2>
+                <input type="text" name="name" id="" placeholder="Full Name">
+                <input type="text" name="email" id="" placeholder="Email">
+                <!-- <input type="text" name="message" id="" placeholder="Type Your Message..."> -->
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Type Your Message..."></textarea>
+                <input type="submit" id="submit" value="Send">
+        </form>
+        </div>
+    </div>
+</body>
+</html>

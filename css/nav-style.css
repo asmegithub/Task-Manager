@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-color: lightslategray; */
+    /* overflow-x: hidden; */
+
+}
+.navbar {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 1em;
+    width: 100%;
+    margin: 0;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+}
+.cool-section{
+    height: 90vh;
+    background-color: #161414;
+    /* background: url(../images/img.webp) no-repeat center; */
+    align-items: center;
+}
+#welcome-div{
+    position: absolute;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 15% 30%;
+}
+#welcome-div button{
+    font-size: .85em;
+    padding: 5px 15px;
+    margin-top: 60pt;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.main-container{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #00bcd4, #ffeb3b);
+}
+.main-title {
+    margin: 80pt 440pt 60pt 400pt;
+}
+.main-title p {
+    font-size: 2.3em;
+    margin-top: 30px;
+    font-style: italic;
+    border-style: double;
+    border-width: 5px;
+    padding: 10pt 5pt 10pt 30pt;
+}
+
+#tasks {
+    /* display: flex;
+    flex-wrap: wrap;
+    margin-top: 20pt;
+    margin-left: 60pt; */
+
+    /* new styling */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+#tasks a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.task-body {
+    /* width: 225pt;
+    height: 230pt;
+    margin: 0 0 80pt 20pt;
+    background-color: #f2f2f2;
+    padding: 25px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    font-size: 1.5em;
+    box-shadow:  0 0 2px 0px;
+    transition: box-shadow 0.3s;
+    border-radius: 5px; */
+
+    /* new styling */
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 350px;
+        height: 300px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+        transition: 0.5s;
+}
+.task-body:hover {
+    height: 400px;
+}
+.task-body h4 {
+    /* padding: 5px;
+    margin: auto auto 5pt 10px;
+    border-radius: 10px; */
+
+    /* New styling */
+    position: absolute;
+    text-align: center;
+    padding: 10%;
+    color: #fff;
+    overflow: hidden;
+    font-size: 2em;
+    width: 300px;
+    height: 200px;
+    top: 20px;
+    background-color: #333;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.task-body:hover h4{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0, 15px 45px rgba(0, 0, 0, 0.2);
+}
+.task-body .content p{
+    position: absolute;
+    top: 256px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    padding: 0 30px;
+    text-align: center;
+    transition: 0.5s;
+    color: #333;
+    font-size: 1.65em;
+}
+.task-body:hover .content p{
+    top: 130px;
+    height: 250px;
+}
+.task-body .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: blue;
+    color: #fff;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.addbtn{
+    position: fixed;
+    bottom:100pt;
+    right: 0;
+    /* margin:20pt auto auto 80%; */
+}
+/* styling for Registration form */
+.registration-section{
+    margin-top: 7%;
+    background-color: lightslategray;
+}
+#content {
+    height: 60vh;
+    width: 45%;
+    padding: 30px;
+    margin:0 auto auto 45%;
+}
+#input-form,
+#input-form2 {
+    margin-left: 25px;
+}
+input[type="text"] {
+    height: 40px;
+    width: 430pt;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 4pt 8pt;
+    border-radius: 5px;
+}
+textarea {
+    margin: 5px;
+    padding: 10pt;
+    width: 430pt;
+    border-radius: 10pt;
+}
+#input-form input[type="submit"] {
+    margin: 10pt auto auto 300pt;
+    padding: 10px 20px;
+    background-color: hsl(0, 3%, 39%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 2em;
+}
+/* #input-form button:hover {
+    background-color: rgb(36, 36, 36);
+    font-size: 2.2em;
+    transition: .2s;
+} */
+/* styling of sub tasks registration */
+
+
+/* #inputform2{
+    position: relative;
+    display: none;
+    background-color: #fff;
+    width: 300pt;
+    height: 250pt;
+    padding: 20pt;
+    margin-left: 125pt;
+    box-shadow: 0 0 5px 1px;
+    border-radius: 15pt;
+}
+#inputform2 input[type="text"] {
+    width: 250pt;
+    margin-top: 10pt;
+} */
+.date-section{
+    display: block;
+    margin-left: 30px;
+}
+.date-section div{
+    margin-top: 20pt;
+}
+.buttons-section button, input[type='submit']{
+    border: none;
+    font-size: 1.5em;
+    padding: 5px 10pt;
+    border-radius: 5pt;
+    background-color: #8b8bed;
+    color: white;
+}
+.nextbtn{
+    margin: 20pt auto auto 120pt;
+}
+.finishbtn{
+    margin-left: 200pt;
+    margin-top: 20pt;
+}
+/* footer style*/
+footer {
+    height: 100pt;
+    background-color: black;
+    padding: 30pt;
+    text-align: center;
+}

@@ -1,0 +1,128 @@
+* {
+    /* padding: 0; */
+    margin: 0;
+}
+
+body {
+    background-color:white;
+    /* background: url(../photos#subtasks.jpeg) no-repeat center center/cover; */
+    /* height: 100vh; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+#inputform2{
+    display: none;
+    /* position: absolute; */
+    margin-top: 40pt;
+    margin-left: 50%;
+}
+#newtaskform{
+    display: none;
+    margin-left: 50pt;
+    /* display: flex; */
+    flex-direction: column;
+    font-size: 1.5em;
+}
+#newtaskform input{
+    width: 55%;
+    margin: 5pt 2pt;
+    padding: 10pt 2pt;
+    border-radius: 5pt;
+}
+#newtaskform input[type="submit"]{
+    margin-left: 85pt;
+}
+#subtasks {
+    margin-top: 60pt;
+    margin-left: 20%;
+    margin-bottom: 60pt;
+    width: 60%;
+    /* background-color: lightgray; */
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 1px;
+}
+
+#subtasks #subtasks-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+#subtasks #newtask{
+    position: absolute;
+    /* margin-top: 0; */
+    margin-left: 52%;
+    font-size: 1.5em;
+    padding: 3pt 8pt;
+}
+
+#subtasks .content-container .each-sub-task {
+    font-size: 22px;
+    padding: 18px 0;
+    cursor: pointer;
+    /* border-bottom: 1px solid black; */
+    position: relative;
+}
+
+#subtasks .content-container .each-sub-task::after {
+    content: url(../images/down.png);
+    position: absolute;
+    right: -5px;
+    
+}
+
+#subtasks .content-container .detail {
+    margin: 5pt;
+    color: gray;
+    padding-top: 15px;
+    line-height: 1.5;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+.detail p{
+    font-size: 1.5em;
+}
+.cplt-btn{
+    display: flex;
+}
+button {    
+    margin-left: 10pt;
+    padding: 3pt 6pt;
+    border: none;
+    background-color: rgb(50, 178, 50);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.8em;
+}
+
+/* javascript styling */
+#subtasks .content-container.active .detail {
+    height: 150px;
+}
+
+#subtasks .content-container.active.each-sub-task {
+    font-size: 8px;
+    transition: .5s;
+}
+
+#subtasks .content-container.active .each-sub-task::after {
+    content: url(../images/up.png);
+    font-size: 30px;
+    transition: .5s;
+}
+.no-task{
+    margin: 5% auto 10% 25%;
+    align-items: center;
+}
+.no-task p{
+    font-size: 2em;
+    color: chocolate;
+    font-style: italic;
+    /* transition: .5sec; */
+}
+.completed-qn li{
+    color: gray;
+    font-weight: bold;
+}
